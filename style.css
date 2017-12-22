@@ -1,0 +1,35 @@
+html,body {
+  height:100%
+}
+body{
+  background-image: url("https://avante.biz/wp-content/uploads/Background-Images-For-Websites/Background-Images-For-Websites-001.jpg");
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: inherit;
+}
+
+li {
+    margin: auto;
+    width: 33%;
+    float: left;
+    background: linear-gradient(to bottom right, white, silver);
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background: linear-gradient(to bottom right, silver, white);
+  }
