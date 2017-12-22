@@ -2,22 +2,28 @@ html,body {
   height:100%
 }
 body{
-  background-image: url("https://avante.biz/wp-content/uploads/Background-Images-For-Websites/Background-Images-For-Websites-001.jpg");
+  /*background-image: url("https://avante.biz/wp-content/uploads/Background-Images-For-Websites/Background-Images-For-Websites-001.jpg");*/
 }
-
+.wrapper{
+  margin: auto;
+}
+header{
+  position: relative ;
+  top: 0px;
+  height: 30px;
+}
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: inherit;
-}
+    background: linear-gradient( rgba(102,255,255,0), rgba(102,255,255,1));
+  }
 
 li {
-    margin: auto;
-    width: 33%;
-    float: left;
-    background: linear-gradient(to bottom right, white, silver);
+    margin-left: 20px;
+    width: 10%;
+    float: left ;
     font-family: sans-serif;
     font-size: 14px;
 }
@@ -31,5 +37,5 @@ li a {
 }
 
 li a:hover {
-    background: linear-gradient(to bottom right, silver, white);
-  }
+border: 1px solid rgb(0,230,230);
+}
