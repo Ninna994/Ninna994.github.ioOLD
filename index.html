@@ -1,44 +1,154 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Home page</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>My Personal Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--  Bootstrap JQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  <script src="js/custom.js"></script>
+  <!-- Custom css -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!--  Fontovi-->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <!-- Container pocetak  -->
 
-  <body>
-    <!-- Linkovi na stranici-->
-    <div class="wrapper">
+  <!-- navigacija fiksirana gore, expand na md uredjaje -->
+  <div class="container-fluid" style="background-color:  #FFEEEE" >
+    <nav class="navbar sticky-top navbar-expand-md navbar-light " style="background-color:  #FFEEEE">
 
-      <div class="header">
-        <header>
+      <a class="navbar-brand" href="#home" style="color: #C88E8E; border-right:1px solid; border-color:#C88E8E; padding-right:2%;">
+        <img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="logo">
+        Nikolina
+      </a>
+      <!--hamburger meni  -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="color:black;">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-          <nav>
-            <ul>
-              <li><a href="index.html" class="current">Home page</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
+      <div class="collapse navbar-collapse justify-content-center  navi" id="collapsibleNavbar">
+        <a class="nav-item nav-link js-scroll-trigger active" href="#home">Welcome <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link js-scroll-trigger" href="#about">About me</a>
+        <a class="nav-item nav-link js-scroll-trigger" href="#skills">Skills</a>
+        <a class="nav-item nav-link js-scroll-trigger" href="#contact">Contact</a>
+      </div>
+
+    </nav>
+    <!--Kraj navigacije  -->
+    <!--  Pocetak home Welcome div-a-->
+    <div id="home" class="row mx-auto ">
+      <div class="col text-center">
+        <h1 class="display-1">
+          Welcome to my Website <br>
+        </h1>
+        <h4 >
+          I hope that soon enough this website will be the representation of a lot of projects I have done.
+          Until then, if you want to find out more about who I am, you can click <a href="#about" style="color:white; text-decoration:underline;">here</a>.
+          To find all contact information I provided follow this <a href="#contact" style="color:white; text-decoration:underline;">link</a>.
+          Thank you for your visit.
+        </h4>
+      </div>
+
+    </div>
+    <!-- Kraj Welcome-div-a -->
+    <hr>
+    <!-- Pocetak about Div-a -->
+    <div id="about" class="row mx-auto">
+      <div class="col text-center">
+        <p class="">
+          <h3 class="display-1">Hi there!</h3>
+          <h4>My name is Nikolina Sekulic and I am 23. <br>
+            I was born in Belgrade, Serbia and I live in Podgorica, Montenegro. <br>
+            For all the other information about me check my <a href="docs/cv.pdf" style="color:black; text-decoration:underline;">CV</a>.<br>
+            Some basic facts:</h4>
+
+            <ul class="list-group" >
+              <li class="list-group-item" style="background-color:inherit;">Love gives life its purpose and meaning!</li>
+              <li class="list-group-item" style="background-color:inherit;">I love to travel. My dream is to travel the world.</li>
+              <li class="list-group-item" style="background-color:inherit;">In spare time I enjoy watching movies and TV shows.</li>
+              <li class="list-group-item" style="background-color:inherit;">I hate getting up early.</li>
+            </ul>
+
+          </p>
+
+        </div>
+        <div class="col text-right">
+          <img class="img-fluid" src="img/about.png" alt="slicica">
+
+        </div>
+      </div>
+      <!-- Kraj about div-a -->
+      <!-- Pocetak skills Div-a -->
+      <div class="row mx-auto" id="skills">
+        <div class="col text-center">
+          <h1 class="display-4">Here is a visual representation of my skills.</h1>
+        </div>
+        <div class="col text-center">
+          <h4>HTML</h4>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+          </div>
+          <h4>CSS</h4>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+          </div>
+          <h4>Bootstrap</h4>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+          </div>
+          <h4>SQL</h4>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
+          </div>
+          <h4>PHP</h4>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 35%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+          </div>
+          <h4>Jquery</h4>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+          </div>
+        </div>
+
+
+      </div>
+      <!-- Kraj skills div-a -->
+
+<!--  Footer- contact-->
+<div class="row mx-auto bg-danger" id="contact">
+  <div class="col text-center">
+    <h2 class="display-4">Feel free to contact me:</h2>
+    <ul class="list-inline">
+      <li class="list-inline-item ">
+<a href="https://www.facebook.com/zauwek.napast"><i class="fab fa-facebook-square fa-3x"></i></a>
+      </li>
+      <li class="list-inline-item ">
+<a href="https://github.com/Ninna994"><i class="fab fa-github-square fa-3x"></i></a>
+      </li>
+      <li class="list-inline-item ">
+<a href="https://www.linkedin.com/in/nikolina-sekuli%C4%87-93509711a/"><i class="fab fa-linkedin fa-3x"></i></a>
+      </li>
+
+
+
+
 
             </ul>
-          </nav>
-        </header>
+  </div>
+  <div class="col-text-center">
 
-      </div>
-      <hr>
-    <div class="content">
-      <div class="welcome">
-        <p>Welcome to my personal website!</p>
-      </div>
-      <div class="text">
-        <p>Hello everyone and welcome to my website.<br>
-           I hope that soon enough this website will be the representation of a lot of projects I have done.<br>
-           Until then, if you want to find out more about who I am, you can click <a href="about.html">here</a>.<br>
-           To find all contact information I provided follow this <a href="contact.html">link</a>.<br>
-          Thank you for your visit.<br>
-        </p>
+  </div>
 
-      </div>
+</div>
+
     </div>
-    </div>
+
+
   </body>
-</html>
+  </html>
